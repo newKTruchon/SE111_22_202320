@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN-DOCUMENT STYLING-->
+    <style>
+        /*in here we write in CSS*/
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page
+            *by ELEMENT type        ex: body, div, p
+            *by ID attribute        ex: #wrapper, #nav, #footer
+            *by CLASS attribute     ex: coming in week 3 :]
+
+        */
+
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+
+        #nav, #footer {
+            background-color:lightgrey;
+        }
+
+    </style>
+</head>
+<body style="background-color:grey">
+    <div id="wrapper"><!--this is the wrapper, and it wraps around all content-->
+
+        <!--HEADER-->
+        <h1>Your Name</h1>
+
+        <!--NAV-->
+        <div id="nav">
+
+            <!--EXTERNAL LINK: a link to a page outside of your website-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+
+            <!--INTERNAL LINK: a link to a page inside of your website/root folder-->
+            <!--RELATIVE PATH-->
+            <a href="page2.html">Page 2</a>
+
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#nav-->
+
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+            <!--REMOTE image links (absolute paths) BOOOOOO!! BAD!! -->
+            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/c/c5/Eddard_stark_and_ice.jpg" alt="Eddard Stark, Warden of the North, holding Ice the great sword contemplating a recent beheading" style="width:500px" title="Hi!">
+
+            <!--RELATIVE image link (relative path) resource must be stored in the root folder-->
+            <img src="images/stormsEnd.jpg" alt="Storm's End castle in spring time" style="width:500px">
+
+        </div><!--/#bio-->
+
+        <hr>
+
+        <!--SCHOOLS-->
+        <div id="schools">
+
+            <h2>Schools</h2>
+
+            <ol>
+                <li>New England Institute of Technology - MSIT</li>
+                <li>Providence Power Yiga - 200HR YTT</li>
+                <li>Maine College of Art - Fine Art Photography</li>
+                <li>University of Southern Maine - Media Studies</li>
+                <li>Narragansett High School</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous Building at dusk" style="width:500px">
+
+        </div><!--/#schools-->
+
+        <hr>
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Arts & Crafts</li>
+                <li>Yoga</li>
+                <li>Couch Potato Time</li>
+                <li>Trying out new bars & restaurants</li>
+                <li>COSTUME PARTIES!</li>
+                <li>games games games</li>
+            </ul>
+
+        </div><!--/#hobbies-->
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; K TRUCHON | SE111 | Winter 2023</p>
+            <br>
+            <!--VALIDATION SCREENSHOT-->
+            <img src="images/indexValidation.PNG" alt="validation of page" style="width:100%">
+
+        </div><!--/#footer-->
+    </div>
+</body>
+</html>
