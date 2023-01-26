@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="W3 Demo">
+    
+    <title>W3 Demo | PLACES</title>
+
+    <!--in-document styling below-->
+    <style>
+        /*write in CSS here*/
+
+        /*selecting by tag type*/
+        div {/*applies to ALL divs on the page*/
+
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+
+        }
+
+        /*select by #ID name*/
+        #wrapper {/*applies ONLY to the element with an ID value 'wrapper'*/
+
+            background-color:darkgrey;
+            width:900px;
+            margin:auto;
+
+        }
+
+        /*select by .CLASS name*/
+        .fancy-font {/*applies to any elements with the 'fancy-font' class*/
+
+            font-family:Trebuchet, sans-serif;
+
+        }
+
+        .border {
+            border:1px solid maroon;
+        }
+
+        #nav {
+
+            border:3px solid maroon;
+            text-align:center;
+        }
+
+        .pic {
+
+            width:500px;
+            padding:5px;
+            box-shadow:0 0 8px black;
+        }
+
+
+    </style>
+</head>
+<body style="background-color:rgb(192,191,191)">
+
+    <!--Building a Mainframe: reusable HTML structure for multi pages-->
+    <div id="wrapper">
+
+        <div id="header" class="border">
+            <h1 class="fancy-font"><em>The Last of Us (HBO)</em></h1>
+        </div><!--/ #header-->
+
+
+        <div id="nav" class="border">
+
+            <!--relative links: resources that live within the root project directory-->
+            <a href="index.html">| HOME |</a>
+            <a href="about.html">| ABOUT |</a>
+            <a href="people.html">| PEOPLE |</a>
+            <a href="places.html">| PLACES |</a>
+
+            <br>
+
+            <!--external link: outside of the website/domain; needs to be an ABSOLUTE path (starts with https)-->
+            <a href="https://www.hbo.com/the-last-of-us">| Official HBO Site |</a>
+
+            <!--in-page jump link: jumps to a section of THIS CURRENT PAGE-->
+            <a href="#footer">| Bottom of Page |</a>
+
+        </div><!--/ #nav-->
+
+
+        <div id="main-content" class="border">
+            <h2 class="fancy-font">content area for the <b>PLACES</b> page.</h2>
+
+        </div><!--/ #main-content-->
+
+
+        <div id="footer" class="border">
+            <p>&copy; K TRUCHON | SE111.22 | Winter 2023</p>
+
+            <br>
+            <a href="index.html#header">go to HOME page header</a>
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+    
+</body>
+</html>
