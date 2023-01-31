@@ -5,8 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2 Bio Page</title>
+    <!--IN-DOCUMENT STYLING-->
+    <style>
+
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element*/
+            margin:5px; /*adds space between element and others*/
+        }
+
+        #nav, #footer {
+            background-color:lightgrey;
+        }
+
+    </style>
 </head>
-<body>
+<body style="background-color:grey">
+    <div id="wrapper"><!--this is the wrapper, and it wraps around all content-->
+
+        <!--HEADER-->
+        <h1>Your Name</h1>
+
+        <!--NAV-->
+        <div id="nav">
+
+            <!--INTERNAL LINK: a link to a page inside of your website/root folder-->
+           
+            <!--IN PAGE JUMP LINK: a link to another section within the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/#nav-->
+
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Katie was born and raised by two <b>compassionate</b> and <i>patient</i> educators by the seaside in Narragansett, Rhode Island. From an early age she learned a love of animals, cultivates a habit of falling into fantastical worlds through reading, and always tries to carry a camera, notebook, and deck of cards with her.</p>
+
+            <p>She is a super-fan of Game of Thrones and a self-proclaimed nerd.</p>
+
+            <p>She spends most of her time with <u>her pack</u> comprised of Jack, George, and Marlowe.</p>
+
+            <!--REMOTE image links (absolute paths) BOOOOOO!! BAD!! -->
+            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/c/c5/Eddard_stark_and_ice.jpg" alt="Eddard Stark, Warden of the North, holding Ice the great sword contemplating a recent beheading" style="width:500px" title="Hi!">
+
+            <!--RELATIVE image link (relative path) resource must be stored in the root folder-->
+            <img src="images/stormsEnd.jpg" alt="Storm's End castle in spring time" style="width:500px">
+
+        </div><!--/#bio-->
+
+        <hr>
+
+        <!--SCHOOLS-->
+        <div id="schools">
+
+            <h2>Schools</h2>
+
+            <ol>
+                <li>New England Institute of Technology - MSIT</li>
+                <li>Providence Power Yiga - 200HR YTT</li>
+                <li>
+                    <!--EXTERNAL LINK: a link to a page outside of your website-->
+                    The <a href="https://www.meca.edu" target="_blank">Maine College of Art </a>- Fine Art Photography
+                </li>
+                <li>University of Southern Maine - Media Studies</li>
+                <li>Narragansett High School</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous Building at dusk" style="width:500px">
+
+        </div><!--/#schools-->
+
+        <hr>
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Arts & Crafts</li>
+                <li>Yoga</li>
+                <li>Couch Potato Time</li>
+                <li>Trying out new bars & restaurants</li>
+                <li>COSTUME PARTIES!</li>
+                <li>games games games</li>
+            </ul>
+
+        </div><!--/#hobbies-->
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#nav">Back to Top</a>
+            <br>
+            <p>&copy; K TRUCHON | SE111 | Winter 2023</p>
+            <br>
+            <!--VALIDATION SCREENSHOT-->
+            <img src="images/indexValidation.PNG" alt="validation of page" style="width:100%">
+
+        </div><!--/#footer-->
+    </div>
     
 </body>
 </html>
